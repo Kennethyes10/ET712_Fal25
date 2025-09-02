@@ -1,7 +1,7 @@
 console.log("lab 2 by Kenneth Soriano")
 console.log("/n---- example 1: array -----")
 // create and initialize an array
-let fruits = {"apples", "orange" , "grapes" , "kiwi" , "pineapple"}
+let fruits = ["apples", "orange" , "grapes" , "kiwi" , "pineapple"]
 console.log(`the 3rd fruit = ${fruits [2]}`)
 console.log(`there is/are ${fruits.length} fruits/s in the list`)
 // remove the 1st element in array fruits using method ' shift()'
@@ -105,6 +105,22 @@ switch(gender){
         console.log("ERROR: unable to read the selected gender")
 }
 
-console.log("/n----- Example 7: swotch statement --------")
+console.log("/n----- EXERCISE 1 --------")
+ user_input = prompt(" enter something")
+check_username = isNaN(parseFLoat(user_input)
 
-console.log("/n----- Example 7: swotch statement --------")
+if(check_username){
+    console.log(`${user_input} is a STRING`)
+}
+else{
+    console.log(`${user_input} is a string`)
+}
+
+console.log("/n----- EXERCISE 2 --------")
+let colors= ["red" , "green", "orange", "olive", "magenta"]
+let user_color = prompt9("enter a color")
+// use lower method to change everything  into lower case
+
+// use indexof method to check if the user_colot exits in array colors
+
+//switch to print the result
