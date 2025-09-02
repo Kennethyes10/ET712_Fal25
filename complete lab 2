@@ -1,0 +1,126 @@
+console.log("lab 2 by Kenneth Soriano")
+console.log("/n---- example 1: array -----")
+// create and initialize an array
+let fruits = ["apples", "orange" , "grapes" , "kiwi" , "pineapple"]
+console.log(`the 3rd fruit = ${fruits [2]}`)
+console.log(`there is/are ${fruits.length} fruits/s in the list`)
+// remove the 1st element in array fruits using method ' shift()'
+console.log(`original; array ${fruits}`)
+fruits.shift()
+console.log(` remove the 1st element in array fruits = ${fruits}`)
+// add elements to the array\
+fruits.unshif(25, "mango", true)
+console.log(` update array with three new elements = ${fruits}`)
+// add elemnts to the end (right) of an array
+fruits.push("PETER", 100)
+console.log(`update array with two new elements to the right= ${fruits}`)
+// find the index of an element
+let index_blueberries = fruits.indexof("blueberries")
+console.log(`what is the index of 'blueberrries'? ${index_blueberries}`)
+// if the return index= -1, then the element doesn't exist in the array
+let index_PETER = fruits.indexOF("PETER")
+console.log(`what is the index of 'blueberrries'? ${index_PETER}`)
+
+console.log("/N----- example 2 :if statemnt -----")
+// if the statemnt is used to check if the condition statement is TRUE. if it is TRUE, then program will run the lines in betwwen the curly braces
+let day = true
+let night = false
+
+//check if it is day time
+if(day){
+     console.log(`good morning`)
+}
+console.log(`END`)
+
+let n1 = 10
+let n2 = "10"
+
+console.log("/N----- example 3 :if statemnt with logical operators -------")
+// check if n1 is equal to n2
+if(n1==n2){
+    console.log(`n1 is equal to n2 --> ${n1==n2}`)
+}
+
+console.log("END2")
+
+// check if n1 is EXACTLY equal to n2
+if(n1==n2){
+    console.log(`n1 is exactly equal to n2 --> ${n1==n2}`)
+}
+
+console.log("END 3")
+
+console.log("/n----- example 4 : check if a number is even or odd --------")
+// if-else check two conditions
+let number = 10
+
+if(number%2 === 0){
+    console.log(`${number} is EVEN`)
+}
+else{
+    console.log(`${number} is ODD`)
+}
+
+console.log("/n----- Example 5: check if an input is a string or a number --------")
+let user_input = prompt(" enter a username")
+let check_username = NaN(user_input)
+console.log(`${user_input} is not a number? ${check_username}`)
+if(check_username){
+    console.log(`${user_input} is a STRING`)
+}
+else{
+    console.log(`${user_input} is a NUMBER`)
+}
+
+console.log("/n----- Example 6: multiway conditional statement --------")
+let num1 = 9
+let num2 = "9"
+if(num1 === num2){
+    console.log(`num1 is EXACTLY EQUAL to num2`)
+}
+else if (num1>num2){
+    console.log("num1 is GREATER THAN num2")
+}
+else if(num1<num2){
+    console.log("num1 is LESS THAN num2")
+}
+else{
+    console.log("ERROS: unable to compare")
+}
+
+console.log("/n----- Example 7: switch statement --------")
+let gender = 'female'
+
+switch(gender){
+    case"female":
+    console.log("selected gender = FEMALE")
+    break
+    case "MALE": case"MALE": case "M": case "m":
+       console.log("selected gender = MALE")
+    break
+    case "other": case 'OTHER': case "other": case "o": case "o":
+    console.log("selected gender = OTHER")
+    break
+    default:
+        console.log("ERROR: unable to read the selected gender")
+}
+
+console.log("/n----- EXERCISE 1 --------")
+ user_input = prompt(" enter something")
+check_username = isNaN(parseFLoat(user_input)
+
+if(check_username){
+    console.log(`${user_input} is a STRING`)
+}
+else{
+    console.log(`${user_input} is a string`)
+}
+
+console.log("/n----- EXERCISE 2 --------")
+let colors= ["red" , "green", "orange", "olive", "magenta"]
+let user_color = prompt9("enter a color")
+// use lower method to change everything  into lower case
+
+// use indexof method to check if the user_colot exits in array colors
+
+//switch to print the result
