@@ -113,8 +113,15 @@ if(check_username){
     console.log(`${user_input} is a STRING`)
 }
 else{
-    console.log(`${user_input} is a string`)
-}
+    console.log(`${user_input} is a NUMBER`)
+if // check if the number is negative
+
+ else if // check if the number is negative
+
+else if // check if the number is zero
+
+else // error
+     
 
 console.log("/n----- EXERCISE 2 --------")
 let colors= ["red" , "green", "orange", "olive", "magenta"]
