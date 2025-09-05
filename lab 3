@@ -119,7 +119,9 @@ if(num < 0) {
 negativesum += num
 }
 // its 0 do nothing
-
+//result numbers
+console.log("sum all the positive numbers")
+console.log("sum all the negative numbers")
 
 
 
