@@ -113,7 +113,7 @@ console.log("-------- EXERCISE A --------")
 let num =[-3, 10, 0, 8, -9, 5, -2, 8, 6, -1] 
 let negativeSum = 0;
 let positiveSum = 0;
-// loop throught the array
+// loop throught 
 for (let = 0; < num.legth; i++) {
 if(num < 0) {
 negativesum += num
