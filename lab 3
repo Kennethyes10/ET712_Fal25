@@ -1,3 +1,8 @@
+/**
+*Kenneth soriano
+*lab 3, loops
+* Sep 4, 2025
+*/
 console.log("Kenneth Soriano")
 console.log(`/n---- example 1: for loop as a counter -----`)
 // for loop to print from 0 to 5
@@ -82,6 +87,29 @@ while(true){
     user_transaction = parseInt(prompt("how can i help you today?/npress 1 for an account balance/npress 2 for deposit/nany number to exit"))
     if (user_transaction <1 || user user_transaction > 2){
         console.log(`thanks you for visiting QCCQ bank`)
+       break
+} 
+switch(user_transaction)}
+case 1:
+console. log(your balance is ${balance}*)
+break
+
+case 2: let
+deposit = parseInt (prompt ("How much do you want to deposit? "))
+if (deposit>0){
+balance += deposit
+console.log(`your new balance is ${balance}`)
+}
+else{
+console.log(`error! invalid amount`)
+}
+break
+console.log(`thanks you for visiting QCCQ bank`)
+       break
+}
+
+
+console.log("-------- EXERCISE A --------")
 
 
 
@@ -90,23 +118,7 @@ while(true){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        console.log("-------- EXERCISE B --------")
+console.log("-------- EXERCISE B --------")
         let PIN = 1234
         let attempt_counter = 3
         while(true){
