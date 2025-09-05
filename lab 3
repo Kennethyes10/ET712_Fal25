@@ -110,11 +110,22 @@ console.log(`thanks you for visiting QCCQ bank`)
 
 
 console.log("-------- EXERCISE A --------")
-
-
-
-
-
+// Ask to enter the value
+let userinput = (prompt ("Enter a value that it can be a string and a number")
+// Inconvert the input to a number
+let numbervalue= number("user input");
+//check the number that is an input ( not a NaN)
+if(Is NaN(number value) ) {
+if (number value > 0) {
+console.log(`${numbervalue} is a negative number`)
+ else if (number value <0) {
+console.log(`${numbervalue} is a positive number`)
+else 
+console.log("the number is zero")
+}
+else
+// if its not a number is a string
+console.log$(`userinput is a string)
 
 
 
@@ -138,3 +149,8 @@ console.log("-------- EXERCISE B --------")
                 console.log("account is locked")
                 break
             }
+// color list
+let colors = {"red","green", "orange", "olive", "magenta"]
+//ask to enter a color
+let userinput= prompt("Enter a color name, ("red", "green", "orange", "olive", "magenta")
+
