@@ -35,3 +35,13 @@ else {
     console.log("Yin and Yang")
 }
 }
+
+console.log("\n------ Program 2:  for loop and nested conditional statement-----")
+// empty array
+let numbers = [];
+//ask the user to enter 10 numbers
+for (let i = 0; i < 10; i ++) {
+    let num = prompt("enter a number");
+    num = parseInt(num);
+    if (isNan(num) 
+    }
