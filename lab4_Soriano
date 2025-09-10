@@ -63,5 +63,13 @@ return false
 //Exercise
 fuction checkName() {
 let name =prompt("Enter the name:");
-while (name === null 
+while (name === null || name.trim() === "" || !isNan(name) ) {
+(name === null || name.trim() === "") {
+mae=prompt(" You forgot to enter a name. Enter a name again:");
+} else if (!isNan(name)) {
+name= prompt(name + "is invalid! Enter a name again:");
+}
+}
+console.log("welcome " + name.toUppercase () + " to the class!");
+}
 
