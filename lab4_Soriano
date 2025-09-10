@@ -1,0 +1,50 @@
+/*
+Kenneth Soriano
+lab 4, functions
+Sep 9, 2025
+5
+*/
+console. log("kenneth Soriano")
+// define a function to print a message
+function msg(){
+   console. 10g("----- Example 1 ------")
+   console. log("Hello World!")
+}
+// define a function to print from 3 to 1 
+function printcount (){
+      console. log("-----Example 2 ----")
+      for(let n = 3; n>0 ; n--){
+          console.log(n)
+      }
+}
+
+// define a function that passes a username
+function greeting(username){
+    console. log("----- Example 3 -----")
+    console. log(`Welcome to JS ${username}`)
+}
+
+// define a function passes a message and print it in
+uppercase
+function upperMessage (message){
+    console. log("----- Example 4 -----")
+    let changeUpper = message.toUpperCase()
+   console. log(changeUpper)
+}
+//define a function to simulate a snake eyes game.
+// pass two numbers to the function, and check if both numbers are '1'
+function isSnakeEyes(dicel,dice2){
+if(dice1===1 && dice2 === 1){
+   console. log("Snake Eyes!")
+}
+else{
+console. log("Not Snake Eyes!")
+}
+}
+
+// define a function that returns the area of a rectangle
+function areaRectangle(lenght, width){
+console. log(" ----- Example 6 -----")
+return lenght*width
+}
+
