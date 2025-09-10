@@ -61,4 +61,7 @@ return false
 }
 
 //Exercise
+fuction checkName() {
+let name =prompt("Enter the name:");
+while (name === null 
 
