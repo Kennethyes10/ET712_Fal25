@@ -48,3 +48,17 @@ console. log(" ----- Example 6 -----")
 return lenght*width
 }
 
+// define a function to check a temperature. If the temperature is greater than 75, returns 'true', otherwise, it
+returns a 'false'
+function checkTemperature (temperature){
+console.log(" ----- Example 7 -----")
+if (temperature>=75){
+return true
+}
+else{
+return false
+  }
+}
+
+//Exercise
+
