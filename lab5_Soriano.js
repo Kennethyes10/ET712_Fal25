@@ -38,25 +38,24 @@ const car ={
 
 //method
 car_discription = fuction(){
-
+return `Car type = ${this.type}, ${this.model}, car color = ${this.color}`
 }
 
+// EXAMPLE 5
+// create an object 'myMath' that will calculate the perimeter or the area of a rectangle
+const myMath = {
+// methods
+perimeter : function(w=0,1=0){ return (2*w)+(2*1) },
+area : function(w=0,1=0) {return w*1}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+// EXAMPLE 6
+const cat = {
+// properties
+name: "Mickey"
+color: "Black with white spots",
 
 breed: unknow ,
-
 // method
 meow:()=>{console.log("MEOW MEOW MEOW"){
 }
@@ -91,3 +90,25 @@ catch(error){
 }
 finally{
     console.log('end of a program')
+
+
+    // Exercise one
+    const mycalculator = {
+        message: "my litte calculator",
+        side"2
+
+    area_square() {
+        return Math.pow(this.side, 2);
+    },
+    volume_cube() {
+        return Math.pow(this.side, 3);
+    };    
+
+     // Exercise two
+    function readProperty(obj , prop) {
+        try{
+            return obj[prop];
+        } catch (e) {
+            return "Error accessing property";
+        }
+    }
