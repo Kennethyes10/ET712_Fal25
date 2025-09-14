@@ -24,7 +24,8 @@ return count;
 }
 
 let = name_counting(5);
-console.log("Number of names with less than 5 characters: " + result);
+console.log("Number of names that is less than 5 characters: " + result);
+
 
 //Exercise 2
 function checkNum() {
