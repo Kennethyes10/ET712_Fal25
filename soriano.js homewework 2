@@ -1,1 +1,55 @@
+/*
+Kenneth Soriano
+Homework 2 - functions, loops, and conditional statement
+*/
+//Exercise 1
+function name_counting(length) {
+// Array names
+let names = ["Ann", "Peter", "Patricia","Sam","Katerina"];
+
+if (length !== names.length) {
+    console.log("the length doesnt match.");
+return;
+}
+
+//  read an array with names and return the number of names that has less than 5 characters.
+let count = 0;
+for(let i = 0; i < names.length; i++) {
+    if (names[i].length < 5) {
+        count++;
+    }
+}
+
+return count;
+}
+
+let = name_counting(5);
+console.log("Number of names with less than 5 characters: " + result);
+
+//Exercise 2
+function checkNum() {
+    let input;
+    let number;
+    
+    while (true) {
+        input = prompt("Enter a number:");
+
+        // trying to convert input to a number
+        number = parseInt(input);
+
+        // check that the input is a valid number
+        if (!isNaN(number) && input.trim () !== "") {
+            break;
+        }
+alert("invalid input. Please enter a valid number.");
+    }
+    // if it is an even number and false if it is an odd number 
+    return number % 2 === 0;
+}
+
+let result= checkNum();
+console.log("is the number even? " + result);
+
+
+
 
