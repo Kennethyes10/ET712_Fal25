@@ -50,3 +50,13 @@ padding: 1%;
     font-size: 1.05ematchMedia;
 }
 
+/* */
+/* introcution image*/
+.intro_img{
+    position: relative;
+}
+.intro_p{
+    position: absolute;
+    top: 10%
+
+    
