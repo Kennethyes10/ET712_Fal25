@@ -1,0 +1,174 @@
+*{box-sizing; border-box;}
+html{scroll-behavior: smooth;}
+
+
+/*header */
+header{
+background-color: Rgb(0,48,109);
+}
+.top_header{
+    display: flex;
+    justify-content: center;
+
+}
+.top header div{
+width: 32%;
+padding: 1%;
+}
+
+.nav_header a{
+    display: inline-block;
+    width: 25%;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5%;
+    border-right: solid white 2px;
+}
+.nav_header a:hover{
+    color: orange;
+}
+.bottom_header{
+    background-color: whitesmoke;
+}
+.nav_bottom_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: Auto;
+}
+.nav_bottom_header a{
+    display: inline-block;
+    width: 20%;
+    padding: 2%
+    color: rgb(0,48,109);
+    text-decoration: none;
+}
+.nav_bottom_header a :hover{
+    text-decoration: underline;
+    font-size: 1.05ematchMedia;
+}
+
+/* */
+/* introcution image*/
+.intro_img{
+    position: relative;
+}
+.intro_p{
+    position: absolute;
+    top: 10%
+ right: 5%;
+    color: white:;
+    font-size: 3em;
+    background-color: rgba(20,20,20,0.8);
+    padding: 0.5em;
+}
+/* INFO CARDS */
+.info_cards{
+    background-color :aliceblue;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center
+}
+.card{
+    width: 300px;
+    border: solid gray 1px;
+    height: 400px;
+    background-color: white;
+    margin: 100 px 20px;
+}
+.card_img{
+    height: 50%;
+}
+.card_content{
+    padding: 1em;
+}
+.card_tittle{
+    color: Rgb(0,48,109);
+
+}
+.card_link{
+    color: Rgb(0,48,109);
+    text-decoration: none;
+}
+.card_paragraph{
+    padding-top: 1em;
+}
+.card_link:hover{
+    color:orangered;
+    text-decoration: underline;
+}
+.card_quicklink{
+    width: 300px;
+    margin: 100px 30px 100px 0px;
+}
+.quicklink{
+    display: 2px rgb(0,48,109) solid;
+   border: 2-x orange solid;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;\
+    margin-top: 20px;
+    border-radius: 10px;
+    color: rgb(0, 48, 109);
+}
+.quicklink:hover{
+    background-color: rgb(30, 30, 50);
+    color:white
+    border: 2px gray solid;
+}
+.section_title{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    color: Rgb(0,48,109);
+    font-size: 3em;
+}
+.cards2{
+    background-color: white;
+}
+/* Footer- contact*/
+footer{
+    background-color: rgb(30, 30, 50);
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fotter_left, .footer_center, .footer_right{
+    width: 500px;
+}
+.fotter_left a, .footer_center a, .footer_right a{
+    color:white;
+    display: block;
+    text-decoration: none;
+    padding-top: 20px;
+}
+.fotter_left a:hover, .footer_center a:hover, .footer_right a:hover{
+    color:orange;
+}
+.social_media{
+    display: flex;
+}
+.social_media a{
+    display: inline-block;
+    width: 13%;
+    margin-right: 20px;
+    opacity: 0.6;
+    transition: ease-in-out 300ms;
+}
+.social_media a:hover{
+    opacity: 1;
+}
+.copyright{
+    width: 100%;
+    color: orange;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+    
