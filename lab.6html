@@ -1,0 +1,41 @@
+< !DOCTYPE html>
+<html lang="en">
+<head>
+    ‹meta charset="UTF-8">
+    ‹meta name="viewport" content="width=device-width, initial-scale=1.0"› ‹ 
+    title>lab 6, Kenneth Soriano‹/title>
+</head>
+‹body>
+‹header >
+‹section class="top header">
+          <div></div>
+          <img src="images/logo.svg" alt="QCC logo">
+          <div>
+          <nav>
+        <a href="https://www.qcc.cuny.edu/admissions/apply.htm"target="_blank" rel="noopener noreferrer">Apply</a>
+        <a href="https://qcc.libguides.com/libraryhome" target="_blank" rel="noopener noreferrer"> Library</a>
+        <a href="https://www.qcc.cuny.edu/employment/index.html" target="_blank" rel="noopener noreferrer"> employment</a>
+        <a href="https://www2.qcc.cuny.edu/directory/default.aspx"target="_blank" rel="noopener noreferrer"> directory</nav></a>
+‹section>
+
+<section class="bottom _header">
+<nav class="nav_bottom_header"
+    <a href="https://www.qcc.cuny.edu/admissions/apply.htm"target="_blank" rel="noopener noreferrer">Apply</a>
+        <a href="https://qcc.libguides.com/libraryhome" target="_blank" rel="noopener noreferrer"> Library</a>
+        <a href="https://www.qcc.cuny.edu/employment/index.html" target="_blank" rel="noopener noreferrer"> employment</a>
+        <a href="https://www2.qcc.cuny.edu/directory/default.aspx"target="_blank" rel="noopener noreferrer"> directory</nav></a>
+<nav>
+‹section></html>
+</header>
+‹ main>
+<section class="intro_img">
+<img src="images/intro.jpg" alt="image
+of hispanic heritage" >
+<p class="intro_p"> Celebrate with us at
+QCC Art Gallery</p>
+</section>
+
+
+</main>
+</body > 
+</html >
