@@ -1,0 +1,20 @@
+/* 
+
+Kenneth Soriano
+
+Homework 3 – Objects and exception handling in JS 
+
+*/  
+// Im gonna create a movie
+ const Movie ={
+    tittle:"The new Spongebob",
+    director: "Kenneth Soriano",
+    year: "2025"
+ }
+    getDetails= function(){
+    return `Movie= ${this.tittle}, ${this.director},${this.year}`
+    }
+
+const MovieCollection ={
+Movies: [],
+addmovie: fuction(movie){
