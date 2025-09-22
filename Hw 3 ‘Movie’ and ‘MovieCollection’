@@ -18,3 +18,11 @@ Homework 3 – Objects and exception handling in JS
 const MovieCollection ={
 Movies: [],
 addmovie: fuction(movie){
+this.movies.push(movie)
+    console.log(`Movie"${movie.tittle}" Adds a movie object to the collection.`)
+
+    removeMovie:function(The new Spongbob) {
+        let index= this.movies.indexOF(fuction)(movies) {
+        }}
+        
+            showMoviesfunction(The new Spongbob) {
