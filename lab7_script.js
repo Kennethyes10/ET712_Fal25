@@ -58,3 +58,25 @@ btnpress.onclick= function(){alert(`${new Date()}`)}
 let x = document.queryselector(".x")
 let circle_paragraph = document.queryselector(".circle_paragraph")
 x.onmouseover = function(){circle_paragraph.textcontent += " - Circle -"}
+
+// event listener
+let box_color = document.queryselector(".box_color")
+// fuction to randomly pick a color as a rgb value
+const randomRGB = fuction(){
+    let red = Math.floor(Math.random()*255)
+    let green = Math.floor(Math.random()*255)
+     let blue = Math.floor(Math.random()*255)
+    return `rgb(${red}, ${green}, ${blue})`
+}
+box_color.addEventlistener("mouseout",fuction(){
+    box_color.style.bacgroundcolor = randomRGB()
+})
+
+
+// Key event
+// collect the element
+let inputtext = document.queryselector(".inputtext")
+let username_paragraph = document.queryselector(".username_paragraph")
+inputttext.addEventlistener("keydown", fuction(){
+    username_paragraph.textcontent = "username must have 3+ charcaters"
+})
