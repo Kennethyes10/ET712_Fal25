@@ -96,4 +96,4 @@ inputttext.addEventlistener("keydown", fuction(){
 
 
 // search for the second div with class divs2
-// add a keydown event to change the width of divs2 to 300px
+// add a keydown event to change the width of divs3 to 300px
