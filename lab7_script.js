@@ -47,3 +47,9 @@ btn_rectangle.addEventListener("click", function(){
     shape.style.backgroundColor = "gray";
     shape.style.fontsize = "2rem"
 })
+
+
+// SEP 30
+// event handler
+let btnpress =  document.queryselector(".btnpress")
+btnpress.onclick= function(){alert(`${new Date()}`)}
