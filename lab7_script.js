@@ -53,3 +53,8 @@ btn_rectangle.addEventListener("click", function(){
 // event handler
 let btnpress =  document.queryselector(".btnpress")
 btnpress.onclick= function(){alert(`${new Date()}`)}
+
+// mouse events
+let x = document.queryselector(".x")
+let circle_paragraph = document.queryselector(".circle_paragraph")
+x.onmouseover = function(){circle_paragraph.textcontent += " - Circle -"}
