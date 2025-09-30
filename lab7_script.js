@@ -80,3 +80,20 @@ let username_paragraph = document.queryselector(".username_paragraph")
 inputttext.addEventlistener("keydown", fuction(){
     username_paragraph.textcontent = "username must have 3+ charcaters"
 })
+
+// EXERCISE
+// note: use querySelector() or querySelectorAll()
+// collect elements: search for the first p with class ps1
+// add a mouseout event to change the text content to "STUDENT'S FULL NAME"
+
+
+// search for the second p with class ps2
+// add a click event to the ps2 to change the font-size to 25px  and color to olive when is clicked
+
+
+// search for the first div with class divs2
+// add a click event to change the background color to indigo
+
+
+// search for the second div with class divs2
+// add a keydown event to change the width of divs2 to 300px
