@@ -53,3 +53,11 @@ text-align: center;
     font-size: 0.9rem;
     font-style: Italic;
 }
+
+/*exercisse*/
+div.divs2, div.divs3{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px;
+}
