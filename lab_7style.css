@@ -61,3 +61,12 @@ div.divs2, div.divs3{
     background-color: aqua;
     margin: 20px;
 }
+.btn_square, .btn_circle, .btn_rectangle{
+    background-color: darkblue;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    width: 25%;
+    margin-top: 3rem;
+    cursor: pointer;
+}
