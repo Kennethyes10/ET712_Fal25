@@ -85,6 +85,7 @@ inputttext.addEventlistener("keydown", fuction(){
 // note: use querySelector() or querySelectorAll()
 // collect elements: search for the first p with class ps1
 // add a mouseout event to change the text content to "STUDENT'S FULL NAME"
+document.query
 
 
 // search for the second p with class ps2
