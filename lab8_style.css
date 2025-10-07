@@ -1,0 +1,29 @@
+*{box-sizing:border-box;}
+img{width:100%;display:block;}
+
+.btnpressme{
+    padding: 0.5em 2em;
+    background-color: rgb(50,50,50);
+    color:white
+    border-radius: 8px;
+}
+.btnactive{
+    background-color: crimson;
+    box-shadow: 0px,0px,3px,1px gray;
+}
+#list li{
+    width: 200px;
+    padding: 1em 2em;
+    border: lightblue 2px solid;
+    list-style: none;
+    display:flex;
+}
+#list li span{
+    display:inline-block;
+    margin-left:auto;
+    width: 20;
+}
+#list li:hover{
+background-color: yellow;
+cursor:pointer;
+}
