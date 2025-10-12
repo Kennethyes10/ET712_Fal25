@@ -59,3 +59,7 @@ btnleft.addEventListener("click", function(){
     scrollgallery(-500)
 })
 }
+
+
+// *Lab exercisse
+                        
