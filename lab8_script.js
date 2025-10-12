@@ -67,5 +67,19 @@ btnleft.addEventListener("click", function(){
     <title>lab8-Kenneth Soriano</title>
   <style>
 
+    .btnpressme {
+     width: 100px;
+    height: 100px ;
+    bacground color: rgb(50, 50, 50);
+    color: white;
+    font-size: 2em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto; 
+    cursor: pointer;
+    user-select: none;
+}
     
 
