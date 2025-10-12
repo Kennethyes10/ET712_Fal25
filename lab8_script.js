@@ -86,5 +86,20 @@ btn.reset: hover {
   background: red;
 }
 
-    
+<button class="btnpressme" id="counter">0</button>
+<button class="btnreset" id="reset">0</button>
 
+let count = 0;
+
+const btnpressme = document.queryselector(".btnpressme");
+const btnreset = document.queryselector(".btnreset");
+
+btnpressme.addeventlistener("click", function () {
+    count++;
+    btnpressme.textconent= count;
+});
+btnreset.addeventlistener("click", function () {
+    count = 0;
+    btnpressme.textcontent = count;
+});
+</script>
