@@ -81,5 +81,10 @@ btnleft.addEventListener("click", function(){
     cursor: pointer;
     user-select: none;
 }
+
+btn.reset: hover {
+  background: red;
+}
+
     
 
