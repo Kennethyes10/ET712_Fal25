@@ -28,5 +28,27 @@ margin-top:  80px;
 <body>
 
 const header = document.queryselector("header");
+let lastscrolly =  window.scrolly;
+ 
+if ( windowscrolly > lastscrolly) {
+// Now im gonna scroll down
+header.style.backgroundcolor="red"
+} else {
+header.style.backgroundcolor="red"
+
+let lastscrolly =  currentscrolly;
+});
+
+window.addeventlistener("resize", function() {
+let width = wind.scrolly
+if (width > 100) {
+header.style.color= "blue";
+} else if (width > 700) {
+header.style.color= "green";
+if (width > 300) {
+header.style.color= "orange";
+} else {
+
+
 
 
