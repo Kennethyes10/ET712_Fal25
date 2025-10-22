@@ -5,3 +5,62 @@
       <meta name="viewport" content="width"=device-width, initial-scale="1.0">
       <tittle>Mini registration</tittle>
 <style>
+
+ .error {
+color: blue;
+}
+.success {
+color: red
+}
+
+<style>
+</head>
+<body>
+
+<h2>registration form </h2>
+<form id="form"
+<label> username:
+<input  type="text">
+</label>
+<div id="feedback"></div>
+<button type="submit" disabled>submit</button>
+</form>
+
+<secipt>
+const takenUsernames = ['admin', 'user123',  'testuser', 'guest', 'peterpan'];
+const myform = document.queryselector("#form1")
+const usernameinput = document.queryselector("#username")
+const feedback = document.queryselector("#feedback")
+const submitbn = document.queryselector("#btnsubmit");
+
+usernameinput.addeventlistener("input", function() {
+const usernamevalue = usernameinput.value.trim().tolowercase();
+if (usernamevalue === "") {
+feeedback.textcontent = "";
+submitbtn.disabled = true;
+}
+else if (takenusernames.includes(usernamevalue)) {
+feedback.textcontent = "username is taken";
+feeback.classname = "username_error_msg error:;
+submitbtn.disabled= true;
+}
+else{
+feedback.textcontent = "username is avialable";
+feeback.classname = "username_error_msg success:;
+submitbtn.disabled = false;
+}
+});
+my form.addeventlistener("submit", fuction(event) {
+event.preventdefault();
+alert("for is submitted sucessfully!");
+myform.reset();
+feedback.textcontent = "";
+submitbtn.disabled = true;
+});
+</script>
+</body>
+</html>
+
+
+
+
