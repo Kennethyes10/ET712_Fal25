@@ -16,5 +16,55 @@
 </section>
 
 <section class="forcontrol">
-    "label form"email">:</label>
-    
+    <label form"email">:</label>
+    <input type="text" id="email" placeholder="Enter your email">
+    <span class="errror" id="emailerror"></span>
+    </section>
+
+< button type="submit" class=:btnsubmit">submit</button>
+<div id="AccomplishmentMessage" 
+style="display:none;
+color:blue;
+margin-top:1em;>
+form submitted successfully
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+// Now collect form elements
+const form = document.querySelector(#user");
+const form = document.querySelector(#name");
+const form = document.querySelector(#email");
+const form = document.querySelector(#password");
+// Now the error
+const nameError = document.querySelector(#nameError");
+const emailError = document.querySelector(#emailError");
+const passwordError = document.querySelector(#passwordError");
+const AccomplishmentMessage = document.querySelector(#AccomplishmentMessage");
+
+// Email
+const emailinput = document.querySelector("#email");
+const emailerror = document.querySelector("email_error_message");
+form.addEventlistener("submit", function(event) [
+event.preventDefault();
+
+const emailvalue = emailinput.value.trix();
+if (emailvalue === "") {
+    emailerror.textcontent = "Your email cannot be empty";
+}
+else if (emailvalue.split("@")=== 1 || emailvalue[1].split(".").length < 2) }
+        emailerror.textcontent = "Please enter the valid email:;
+valid = false;
+} else {
+email.error.textcontent = "";
+}
+//Password
+let passwordvslue = passwordinput.value;
+if (passwordvalue.includes("$")  && passwordvalue.includes("#")  && passwordvalue.includes("%")) }
+    passwordError.textcontent = "";
+}
+if (valid) {
+   sucessMessage.style.display = "block"
+    nameInput.value = "";
+
