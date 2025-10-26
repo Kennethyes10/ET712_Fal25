@@ -65,6 +65,12 @@ if (passwordvalue.includes("$")  && passwordvalue.includes("#")  && passwordvalu
     passwordError.textcontent = "";
 }
 if (valid) {
-   sucessMessage.style.display = "block"
-    nameInput.value = "";
+   AccomplishmentMessage.style.display = "block"
+nameInput.value = "";
+emailInput.value = "";
+passwordInput.value = "";
+}else {
+AccomplishmentMessage.style.display = "none";
+}
+});
 
