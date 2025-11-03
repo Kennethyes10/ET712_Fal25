@@ -18,10 +18,10 @@
 /*Tablet */
 @media (min-width: 600px) and (max-width: 1020px) {
 .color-boxes div,
-.number-boxer div,
+.number-boxes div,
 .animal-boxes div,
 .shape-boxes div {
-    width: 40;
+    width: 40%;
     margin: 10px;
 }
 }
@@ -29,7 +29,7 @@
 /*Deskopt */
 @media (min-width: 1020px) {
 .color-boxes div,
-.number-boxer div,
+.number-boxes div,
 .animal-boxes div,
 .shape-boxes div {
     width: 20%;
