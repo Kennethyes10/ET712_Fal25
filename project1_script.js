@@ -8,8 +8,7 @@ const sections = {
     colors: document.querySelector('.colors'),
     numbers: document.querySelector('.numbers'),
     animals: document.querySelector('.animals'),
-    shapes: document.querySelector('.shapes'),
-
+    shapes: document.querySelector('.shapes')
 };
 
 function hideAllSections() {
@@ -21,22 +20,22 @@ function hideAllSections() {
 // When the button is clicked
 btnColors.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelector('.colors').style.display = 'block';
+    sections.colors.style.display = 'block';
 });
 
 btnNumbers.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelector('.colors').style.display = 'block';
+    sections.numbers.style.display = 'block';
 });
 
 btnAnimals.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelector('.colors').style.display = 'block';
+    sections.animals.style.display = 'block';
 });
 
 btnShapes.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelector('.colors').style.display = 'block';
+   sections.shapes.style.display = 'block';
 });
 
 //Addding alerts
@@ -47,26 +46,28 @@ document.querySelectorALL('.color-boxes div').forEach(color => {
 });
 
 document.querySelectorALL('.number-boxes div').forEach(number => {
-    color.addEventListener('click', () => {
+    number.addEventListener('click', () => {
         alert(`This number is ${number.textContent}`);
     });
 });
 
 document.querySelectorALL('.animal-boxes div').forEach(animal => {
-    color.addEventListener('click', () => {
-        alert(`This animal is ${animalName}`);
+    animal.addEventListener('click', () => {
+        alert(`This animal is ${animal.querySelector('p').textContent}`);
     });
 });
 
 document.querySelectorALL('.shape-boxes div').forEach(shape => {
-    color.addEventListener('click', () => {
+    shape.addEventListener('click', () => {
         alert(`This shape is ${shape.textContent}`);
     });
 });
 
+// Go--- to top button ---
 const topBtn = document.getElementById('topBtn');
+
 window.onscroll = function () {
-    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         topBtn.style.display = "block";
     } else {
         topBtn.style.display = "none";
@@ -79,5 +80,4 @@ topBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
 
