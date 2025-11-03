@@ -1,13 +1,13 @@
 // The button navigation
-const btnColors = document.querySelectorAll('.btnColors');
-const btnNumbers = document.querySelectorAll('.btnNumbers');
-const btnAnimals = document.querySelectorAll('.btnAnimals');
-const btnShapes = document.querySelectorAll('.btnShapes');
+const btnColors = document.querySelector('.btnColors');
+const btnNumbers = document.querySelector('.btnNumbers');
+const btnAnimals = document.querySelector('.btnAnimals');
+const btnShapes = document.querySelector('.btnShapes');
 
 const sections = {
     colors: document.querySelector('.colors'),
     numbers: document.querySelector('.numbers'),
-    animals: document.querySelector('.Animals'),
+    animals: document.querySelector('.animals'),
     shapes: document.querySelector('.shapes'),
 
 };
@@ -19,56 +19,64 @@ function hideAllSections() {
 }
 
 // When the button is clicked
-const btncolors = document.querySelector('.btnColors');
-
-btnColors.addEvenListener('click',() => {
+btnColors.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelectorAll('.colors').style.display = 'block';
+    document.querySelector('.colors').style.display = 'block';
 });
 
-const btnnumbers = document.querySelector('.btnColors');
-
-btnnumbers.addEvenListener('click',() => {
+btnNumbers.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelectorAll('.colors').style.display = 'block';
+    document.querySelector('.colors').style.display = 'block';
 });
 
-const btnanimals = document.querySelector('.btnColors');
-
-btnanimals.addEvenListener('click',() => {
+btnAnimals.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelectorAll('.colors').style.display = 'block';
+    document.querySelector('.colors').style.display = 'block';
 });
 
-const btnshapes = document.querySelector('.btnColors');
-
-btnshapes.addEvenListener('click',() => {
+btnShapes.addEventListener('click',() => {
     hideAllSections(); 
-    document.querySelectorAll('.colors').style.display = 'block';
+    document.querySelector('.colors').style.display = 'block';
 });
 
 //Addding alerts
-document.querySelectorAll('.color').forEach(color => {
-    color.addEventListener('click',  () => {
+document.querySelectorALL('.color-boxes div').forEach(color => {
+    color.addEventListener('click', () => {
         alert(`This color is ${color.textContent}`);
     });
 });
 
-document.querySelectorAll('.number').forEach(number => {
-    color.addEventListener('click',  () => {
+document.querySelectorALL('.number-boxes div').forEach(number => {
+    color.addEventListener('click', () => {
         alert(`This number is ${number.textContent}`);
     });
 });
 
-document.querySelectorAll('.animal').forEach(animal => {
-    color.addEventListener('click',  () => {
-        alert(`This animal is ${animaName}`);
+document.querySelectorALL('.animal-boxes div').forEach(animal => {
+    color.addEventListener('click', () => {
+        alert(`This animal is ${animalName}`);
     });
 });
 
-document.querySelectorAll('.shape').forEach(shape => {
-    color.addEventListener('click',  () => {
+document.querySelectorALL('.shape-boxes div').forEach(shape => {
+    color.addEventListener('click', () => {
         alert(`This shape is ${shape.textContent}`);
+    });
+});
+
+const topBtn = document.getElementById('topBtn');
+window.onscroll = function () {
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
+
+topBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 });
 
