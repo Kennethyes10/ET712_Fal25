@@ -1,4 +1,5 @@
 // The button navigation
+// It handles switching between colors,numbers,animals and shapes sections
 const btnColors = document.querySelector('.btnColors');
 const btnNumbers = document.querySelector('.btnNumbers');
 const btnAnimals = document.querySelector('.btnAnimals');
@@ -39,31 +40,33 @@ btnShapes.addEventListener('click',() => {
 });
 
 //Addding alerts
-document.querySelectorALL('.color-boxes div').forEach(color => {
+//It shows alert with the name of the color,number,shape or animal when is clicked
+document.querySelectorAll('.color-boxes div').forEach(color => {
     color.addEventListener('click', () => {
         alert(`This color is ${color.textContent}`);
     });
 });
 
-document.querySelectorALL('.number-boxes div').forEach(number => {
+document.querySelectorAll('.number-boxes div').forEach(number => {
     number.addEventListener('click', () => {
         alert(`This number is ${number.textContent}`);
     });
 });
 
-document.querySelectorALL('.animal-boxes div').forEach(animal => {
+document.querySelectorAll('.animal-boxes div').forEach(animal => {
     animal.addEventListener('click', () => {
         alert(`This animal is ${animal.querySelector('p').textContent}`);
     });
 });
 
-document.querySelectorALL('.shape-boxes div').forEach(shape => {
+document.querySelectorAll('.shape-boxes div').forEach(shape => {
     shape.addEventListener('click', () => {
         alert(`This shape is ${shape.textContent}`);
     });
 });
 
 // Go--- to top button ---
+// It displays when is scrolling and scrolls smoothly back to the top
 const topBtn = document.getElementById('topBtn');
 
 window.onscroll = function () {
@@ -80,4 +83,3 @@ topBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
