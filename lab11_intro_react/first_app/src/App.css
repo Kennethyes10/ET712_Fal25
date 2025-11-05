@@ -1,0 +1,16 @@
+*{box-sizing: border-box; }
+body{padding: 2rem;}
+
+.title{text-align: center; color: blueviolet;}
+.author{text-align: right; font-style: italic;}
+#user_email{
+  padding: 0.5rem 2rem;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+.imgcontainer img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
