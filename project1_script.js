@@ -1,16 +1,21 @@
 // The button navigation
 // It handles switching between colors,numbers,animals and shapes sections
-const btnColors = document.querySelector('.btnColors');
-const btnNumbers = document.querySelector('.btnNumbers');
-const btnAnimals = document.querySelector('.btnAnimals');
-const btnShapes = document.querySelector('.btnShapes');
+const btnColors = document.querySelectorAll('.btnColors');
+const btnNumbers = document.querySelectorAll('.btnNumbers');
+const btnAnimals = document.querySelectorAll('.btnAnimals');
+const btnShapes = document.querySelectorAll('.btnShapes');
+const btnHomes = document.querySelectorAll('.btnHome');
+
 
 const sections = {
+    home: document.querySelector('.home'),
     colors: document.querySelector('.colors'),
     numbers: document.querySelector('.numbers'),
     animals: document.querySelector('.animals'),
     shapes: document.querySelector('.shapes')
 };
+
+
 
 function hideAllSections() {
     for(let sec in sections) {
@@ -18,25 +23,43 @@ function hideAllSections() {
     }
 }
 
+hideAllSections();
+sections.home.style.display = 'block';
+
 // When the button is clicked
-btnColors.addEventListener('click',() => {
+btnColors.forEach(btn => {
+    btn.addEventListener('click',() => {
     hideAllSections(); 
     sections.colors.style.display = 'block';
 });
+});
 
-btnNumbers.addEventListener('click',() => {
+btnNumbers.forEach(btn => {
+   btn.addEventListener('click',() => {
     hideAllSections(); 
     sections.numbers.style.display = 'block';
 });
+});
 
-btnAnimals.addEventListener('click',() => {
+btnAnimals.forEach(btn => {
+    btn.addEventListener('click',() => {
     hideAllSections(); 
     sections.animals.style.display = 'block';
 });
+});
 
-btnShapes.addEventListener('click',() => {
+btnShapes.forEach(btn => {
+    btn.addEventListener('click',() => {
     hideAllSections(); 
    sections.shapes.style.display = 'block';
+});
+});
+
+btnHomes.forEach(btn => {
+    btn.addEventListener('click', () => {
+        hideAllSections();
+        sections.home.style.display = 'block';
+    });
 });
 
 //Addding alerts
