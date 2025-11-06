@@ -168,7 +168,6 @@ section h2 {
 }
 
 .shape-triangle::after {
-    content: "Triangle";
     position: absolute;
     top: 125px;
     left: 50%;
