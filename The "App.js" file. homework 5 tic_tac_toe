@@ -1,0 +1,95 @@
+import './App.css';
+import { useState } from 'react';
+
+// Square component
+function Square({ value, onSquareClick, highlight }) {
+  return (
+    <button className={`square ${highlight ? 'highlight' : ''}`} onClick={onSquareClick}>
+      {value}
+    </button>
+  );
+}
+
+// App component
+function App() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  const [xIsNext, setXIsNext] = useState(true);
+
+  // Handle square click
+  function handleClick(i) {
+    // Stop if square is filled or if someone already won
+    if (squares[i] || calculateWinner(squares)) {
+      return;
+    }
+
+    const nextSquares = squares.slice();
+    nextSquares[i] = xIsNext ? 'X' : 'O';
+    setSquares(nextSquares);
+    setXIsNext(!xIsNext);
+  }
+
+  // Get winner and winning line
+  const result = calculateWinner(squares);
+  let status;
+  if (result) {
+    status = `Winner: ${result.winner}`;
+  } else if (!squares.includes(null)) {
+    status = "It's a draw!";
+  } else {
+    status = `Next player: ${xIsNext ? 'X' : 'O'}`;
+  }
+
+  // Helper to highlight winning squares
+  function isWinningSquare(index) {
+    return result?.line.includes(index);
+  }
+
+  // Reset game
+  function resetGame() {
+    setSquares(Array(9).fill(null));
+    setXIsNext(true);
+  }
+return (
+    <div>
+      <h1 className='title'>Tic Tac Toe by Kenneth Soriano</h1>
+      <div className='boardcontainer'>
+        <div className="status">{status}</div>
+        <div className="board-row">
+          <Square value={squares[0]} onSquareClick={() => handleClick(0)} highlight={isWinningSquare(0)} />
+          <Square value={squares[1]} onSquareClick={() => handleClick(1)} highlight={isWinningSquare(1)} />
+          <Square value={squares[2]} onSquareClick={() => handleClick(2)} highlight={isWinningSquare(2)} />
+        </div>
+        <div className="board-row">
+          <Square value={squares[3]} onSquareClick={() => handleClick(3)} highlight={isWinningSquare(3)} />
+          <Square value={squares[4]} onSquareClick={() => handleClick(4)} highlight={isWinningSquare(4)} />
+          <Square value={squares[5]} onSquareClick={() => handleClick(5)} highlight={isWinningSquare(5)} />
+        </div>
+        <div className="board-row">
+          <Square value={squares[6]} onSquareClick={() => handleClick(6)} highlight={isWinningSquare(6)} />
+          <Square value={squares[7]} onSquareClick={() => handleClick(7)} highlight={isWinningSquare(7)} />
+          <Square value={squares[8]} onSquareClick={() => handleClick(8)} highlight={isWinningSquare(8)} />
+        </div>
+      </div>
+      <button className="reset-button" onClick={resetGame}>Restart Game</button>
+    </div>
+  );
+}
+
+// Helper function to calculate winner
+function calculateWinner(squares) {
+  const lines = [
+    [0,1,2],[3,4,5],[6,7,8],
+    [0,3,6],[1,4,7],[2,5,8],
+    [0,4,8],[2,4,6]
+  ];
+
+  for (let line of lines) {
+    const [a,b,c] = line;
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return { winner: squares[a], line };
+    }
+  }
+  return null;
+}
+
+export default App;
