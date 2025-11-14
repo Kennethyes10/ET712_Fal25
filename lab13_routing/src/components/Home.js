@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../App.css';
 import aboutimg from '../images/about.jpg';
 import contactimg from '../images/contact.png';
@@ -11,18 +12,25 @@ const Home = function() {
       </header>
 
       <main className="maincontainer">
+        
+        {/* About card */}
         <div className="cardimg">
-          <img src={aboutimg}/>
+          <Link to="/about">
+            <img src={aboutimg} alt="About" />
+          </Link>
         </div>
+
+        {/* Contact card */}
         <div className="cardimg">
-          <img src={contactimg} />
+          <Link to="/contact">
+            <img src={contactimg} alt="Contact" />
+          </Link>
         </div>
+
       </main>
     </>
   );
 };
 
 export default Home;
-
-
 
