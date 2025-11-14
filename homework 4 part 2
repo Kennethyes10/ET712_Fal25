@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width"=device-width, initial-scale="1.0">
+      <title>Card Gallery/tittle>
+      link="stylesheet: href="syle.css">
+</head>
+<body>
+<1> Card Gallery</h1>
+<section class="gallery-container">
+  <button class="btn-left">left</button>
+<div class="cards-container">
+<div class="card"
+<img src="a-1697224284705-2x.jpg.1" alt="image 1">
+<h3> card 1</h3>
+<p>The short description 1</p>
+<a href="#">Please read more</a>
+</div>
+div class="card"
+<img src="a-1697222825662-2x.jpg.jpg.2" alt="image 2">
+<h3> card 2</h3>
+<p>The short description 2</p>
+<a href="#">Please read more</a>
+</div>
+div class="card"
+<img src="a-1697222793232-2x.jpg.3" alt="image 3">
+<h3> card 3</h3>
+<p>The short description 3</p>
+<a href="#">Please read more</a>
+</div>
+div class="card"
+<img src="a-1697222709624-2x.jpg.4" alt="image 4">
+<h3> card 4</h3>
+<p>The short description 4</p>
+<a href="#">Please read more</a>
+</div>
+div class="card"
+<img src="b-1697223851118-2x.jpg.5" alt="image 5">
+<h3> card 5</h3>
+<p>The short description 5</p>
+<a href="#">Please read more</a>
+</div>
+div class="card"
+<img src="b-8797221851138-2x.jpg.6" alt="image 6">
+<h3> card 6</h3>
+<p>The short description 6</p>
+<a href="#">Please read more</a>
+</div>
+</div>
+</div>
+<button class="btn-right">right</button>
+</section>
+
+card-gallery {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+card.container {
+display : flex;
+width: 800px;
+overflow: hidden;
+}
+card {
+text-align: center;
+padding: 1rem;
+Background-color: blue;
+min-width: 300px;
+}
+.card img {
+width: 90%;
+diplay : block;
+}
+button {
+cursor: pointer;
+font-size: 2rem;
+padding: 0.4rem 2rem;
+}
+const container = document.querySelector("cards-container");
+const btnleft = document.querySelector("btn-left");
+const btnright = document.querySelector("btn-right");
+const cardwith = 310;
+const visiblecards = 3;
+const total cards = 6;
+let scrollIndex = 0;
+
+btnright.addEventListener("click", function () {
+scrollindex;
+if(scrollindex > totalcards - visiblecards) {
+scrollindex = 0;
+}
+container.scrollby({
+left: scrollindex cardwidth,
+behavior: "smooth"
+});
+});
+btnleft.addEventListener("click", function() {
+scrollindex--;
+if(scrollindex < 0) {
+scrollIndex = total cards - visiblecards;
+}
+container.scrollby({
+left: scrollindex cardwidth,
+behavior: "smooth"
+});
+});
