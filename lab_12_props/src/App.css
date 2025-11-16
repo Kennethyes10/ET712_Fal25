@@ -1,0 +1,97 @@
+*{box-sizing: border-box;}
+img{width: 100%; display: block;}
+
+/* comments.js */
+.author{
+    text-align: center;
+    display: block;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.medata, .comment{
+    text-align: center;
+}
+.date{
+    font-style: italic;
+    color: darkblue;
+    font-weight: bolder;
+}
+
+/* app.js */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* user_feeback.js*/
+.feedbackcard{
+    width: 300px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+.cardfooter{
+    background-color: gray;
+    padding: 0.5rem 1rem;
+    color: aliceblue;
+}
+.feedbackcontainer{
+    margin: 1rem;
+}
+.feedbackcontainer:hover{
+    box-shadow: 0px 0px 5px 1px gray;
+    transform: scale (1.01);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.content{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+/* modalwindow.js */ 
+.modalwindow{
+    background-color: rgba(50, 50 50, 0.7);
+    position: fixed;
+top: 0%; bottom: 0%; left: 0%; right: 0%;
+display: none;
+}
+.modalcontent{
+background-color: whitesmoke; 
+width: 500px;
+margin: 100px auto;
+}
+.modalheader{
+border-bottom: ridge 1px lightblue;
+display: flex;
+}
+.modalheader p:nth-child(1) {
+ font-size: 1.2rem; 
+ text-align: center;
+width: 80%;
+}
+.closemodal{
+margin-left: auto; padding-right: 2rem;
+}
+.commentarea{ 
+width: 80%;
+margin: 10%;
+padding: 0.5rem 1rem;
+}
+.btnpostfeedback{
+    width: 80%;
+    margin: 10%;
+    background-color: lightgreen;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.btnpostfeedback:hover{
+background-color: crimson;
+}
+.closemodal:hover{
+color: crimson;
+}
