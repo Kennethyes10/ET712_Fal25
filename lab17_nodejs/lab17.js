@@ -17,8 +17,8 @@ console.log(name.id(12345))
 console.log(name.useremail("peter@neverland.edu"))
 
 console.log('------- example 3: event emitter -----')
-const events = require('events');
-
+//const events = require('events');
+import events from 'events'
 const eventEmitter = new events.EventEmitter()
 
 eventEmitter.on('test', function(a){
