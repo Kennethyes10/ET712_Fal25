@@ -1,0 +1,35 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+  align-items: flex-start; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Mobile*/
+@media (max-width: 480px) {
+  .card-container {
+    gap: 15px; 
+    justify-content: center;
+  }
+}
+
+/* Tablet*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .card-container {
+    gap: 18px;
+    justify-content: center; 
+  }
+}
+
+/* Deskopt*/
+@media (min-width: 769px) {
+  .card-container {
+    gap: 20px;
+    justify-content: center; 
+  }
+}
+
+
